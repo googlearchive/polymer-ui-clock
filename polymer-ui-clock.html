@@ -10,9 +10,9 @@ license that can be found in the LICENSE file.
     <link rel="stylesheet" href="polymer-ui-clock.css">
     <div id="widget-title">{{ dateStr }}</div>
     <div id="clock">
-      <div id="second" style="-webkit-transform: translate3d({{xSecond}}px,{{ySecond}}px,0) rotate({{rotateSecond}}deg);"></div>
-      <div id="minute" style="-webkit-transform: translate3d({{xMinute}}px,{{yMinute}}px,0) rotate({{rotateMinute}}deg);"></div>
-      <div id="hour" style="-webkit-transform: translate3d({{xHour}}px,{{yHour}}px,0) rotate({{rotateHour}}deg);"></div>
+      <div id="second" style="-webkit-transform: translate3d({{xSecond}}px,{{ySecond}}px,0) rotate({{rotateSecond}}deg); transform: translate3d({{xSecond}}px,{{ySecond}}px,0) rotate({{rotateSecond}}deg);"></div>
+      <div id="minute" style="-webkit-transform: translate3d({{xMinute}}px,{{yMinute}}px,0) rotate({{rotateMinute}}deg); transform: translate3d({{xMinute}}px,{{yMinute}}px,0) rotate({{rotateMinute}}deg);"></div>
+      <div id="hour" style="-webkit-transform: translate3d({{xHour}}px,{{yHour}}px,0) rotate({{rotateHour}}deg); transform: translate3d({{xHour}}px,{{yHour}}px,0) rotate({{rotateHour}}deg);"></div>
       <!-- <div id="dot"></div> -->
     </div>
     <div id="time">{{ time }}</div>
